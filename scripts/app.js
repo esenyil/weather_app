@@ -26,18 +26,18 @@ const updateUI = (data) => {
     `;
 
     //update the night/day & icon images
-    const iconSource = `img/icons/${weather.WeatherIcon}.svg`;
+    const iconSource = `./img/icons/${weather.WeatherIcon}.svg`;
     icon.setAttribute('src', iconSource);
 
     //ternary operator - another way to write if statements
-    let timeSource = weather.IsDayTime ? 'img/day.svg' : 'img/night.svg';
+    let timeSource = weather.IsDayTime ? './img/day.svg' : './img/night.svg';
     time.setAttribute('src', timeSource);
 
     // let timeSource = null;
     // if(weather.IsDayTime){
-    //     timeSource = 'img/day.svg';
+    //     timeSource = './img/day.svg';
     // } else {
-    //     timeSource = 'img/night.svg';
+    //     timeSource = './img/night.svg';
     // }
     // time.setAttribute('src', timeSource);
 
